@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body></body>
+<script>
+	var data = [
+				  [10, 20], [20, 100], [200, 50],
+				  [25, 80], [10, 200], [150, 75],
+				  [10, 70], [30, 150], [100, 15]
+				];
+
+	var svg = d3.select("body")
+        .append("svg")
+        .attr("width", 250)
+        .attr("height", 250)
+        .attr("style", "outline: thin solid red;");
+
+	svg.selectAll("rect")
+	    .data(data).enter()
+	    .append("rect")
+	    .attr("x", function(d) {return d[0]-5})
+	    .attr("y", function(d) {return d[1]-5})
+		.attr('width', 10)
+	    .attr('height', 10)
+		.attr('stroke', 'black')
+		.attr('fill', '#69a3b2');
+
+	svg.selectAll("text")
+	    .data(data).enter()
+	    .append("text")
+	    .attr("x", function(d) {return d[0]+4})
+	    .attr("y", function(d) {return d[1]+4})
+	    .text(function(d) {return d[0] + ", " + d[1]})
+	    .attr("font-size", "10px");
+</script>
