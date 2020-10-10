@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" container="width=device-width, initial-scale=1.0">
+  <title>D3 Bar</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="bar.js" defer></script>
+  <style media="screen">
+      .container {
+          width: 250px;
+          height: 200px;
+          border: 1px solid #CC1111;
+      }
+      .bar {
+          fill: #DD1111;
+      }
+      ul {
+        list-style: none;
+        margin: 3rem auto;
+        padding: 1rem;
+        width: 100px;
+      }
+      li {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+        margin: 1rem 0;
+        padding: 0.5 rem;
+      }
+      .added {
+        background-color: lightgreen;
+      }
+      .redun {
+        background-color: lightcoral;
+      }
+      .updated {
+        background-color: orange;
+      }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <svg class="container"></svg>
+      </td>
+      <td>
+        <ul id="mylist"></ul>
+      </td>
+  </tr>
+  </table>
+
+</body>
+</html>

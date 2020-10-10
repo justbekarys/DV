@@ -1,0 +1,1 @@
+Add functionality to the bar chart, remove and add bars to the chart considering the list of countries.
