@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Array Routines</title>
+  <script src="d3.min.js"></script>
+</head>
+<body>
+<script>
+  var data = [20,40,60,80,100,200,150];
+  console.log('d3.min(data)',d3.min(data));
+  console.log('d3.max(data)',d3.max(data));
+  console.log('d3.extent(data)',d3.extent(data));
+  console.log('d3.sum(data)',d3.sum(data));
+  console.log('d3.mean(data)',d3.mean(data));
+  console.log('d3.quantile(data)',d3.quantile(data,0.25));
+  console.log('d3.variance(data)',d3.variance(data));
+  console.log('d3.deviation(data)',d3.deviation(data));
+
+  var data2 = [{val:1},{val:10},{val:100}];
+  console.log(d3.scan(data2, function(a,b) {return a.val - b.val;}));
+  console.log(d3.scan(data2, function(a,b) {return b.val - a.val;}));
+
+  console.log("d3.cross",d3.cross([1,2],["a","b"]));
+  console.log(d3.merge([[1,2],[3,4]]));
+  console.log(d3.pairs([1,2,3,4]));
+  var data3 = {car:"mercedes",color:"black"}
+  var fields = ["car","color"];
+
+  console.log(d3.permute(data3,fields));
+</script>
+</body>
+</html>
