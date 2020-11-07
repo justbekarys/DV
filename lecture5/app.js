@@ -12,13 +12,14 @@ svg.attr("transform", 'translate(100,50)');
 
 svg.call(tip);
 
+var datas;
+
 
 d3.json("http://localhost:8000/data.json").then((data) => {
-    console.log(data);
+    datas = data;
     var maxYScale = d3.max(
         data.map((d) => d.length)
     );
-    console.log("maxYScale", maxYScale);
     xScale.domain([0, data.length])
     yScale.domain([0, maxYScale]);
 
@@ -36,8 +37,6 @@ d3.json("http://localhost:8000/data.json").then((data) => {
         }
     }
 
-    console.log(links);
-
     var sozyvs = svg
         .selectAll("g")
         .data(data)
@@ -48,15 +47,23 @@ d3.json("http://localhost:8000/data.json").then((data) => {
 
 
     function onmouseout(d, i, e) {
-        d3.select(this)
+        d3.selectAll("rect[name='" + d + "']")
             .attr('class', "member");
         tip.hide();
     }
 
     function onmouseover(d, i, e) {
-        d3.select(this)
+        d3.selectAll("rect[name='" + d + "']")
             .attr('class', "hl");
-        tip.show(d, e[i]);
+        let counts = 0;
+        var a = [];
+        datas.forEach(function(value, i) {
+            if (value.includes(d)) {
+                counts = counts + 1;
+                a.push(i + 1);
+            }
+        });
+        tip.show(d + '<br>Участвовал/а ' + counts + ' созывах' + '<br>Созывы : ' + a, e[i]);
     }
 
     sozyvs
