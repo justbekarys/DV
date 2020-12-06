@@ -1,0 +1,303 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "animal"
+    },
+    {
+      "id": 2,
+      "name": "eutherian_mammal"
+    },
+    {
+      "id": 3,
+      "name": "entity"
+    },
+    {
+      "id": 4,
+      "name": "whole"
+    },
+    {
+      "id": 5,
+      "name": "brute"
+    },
+    {
+      "id": 6,
+      "name": "vertebrate"
+    },
+    {
+      "id": 7,
+      "name": "animate_thing"
+    },
+    {
+      "id": 8,
+      "name": "placental_mammal"
+    },
+    {
+      "id": 9,
+      "name": "domesticated_animal"
+    },
+    {
+      "id": 10,
+      "name": "canid"
+    },
+    {
+      "id": 11,
+      "name": "domestic_dog"
+    },
+    {
+      "id": 12,
+      "name": "fauna"
+    },
+    {
+      "id": 13,
+      "name": "object"
+    },
+    {
+      "id": 14,
+      "name": "chordate"
+    },
+    {
+      "id": 15,
+      "name": "physical_object"
+    },
+    {
+      "id": 16,
+      "name": "unit"
+    },
+    {
+      "id": 17,
+      "name": "canine"
+    },
+    {
+      "id": 18,
+      "name": "being"
+    },
+    {
+      "id": 19,
+      "name": "craniate"
+    },
+    {
+      "id": 20,
+      "name": "beast"
+    },
+    {
+      "id": 21,
+      "name": "domestic_animal"
+    },
+    {
+      "id": 22,
+      "name": "carnivore"
+    },
+    {
+      "id": 23,
+      "name": "physical_entity"
+    },
+    {
+      "id": 24,
+      "name": "creature"
+    },
+    {
+      "id": 25,
+      "name": "placental"
+    },
+    {
+      "id": 26,
+      "name": "eutherian"
+    },
+    {
+      "id": 27,
+      "name": "animate_being"
+    },
+    {
+      "id": 28,
+      "name": "mammalian"
+    },
+    {
+      "id": 29,
+      "name": "Canis_familiaris"
+    },
+    {
+      "id": 30,
+      "name": "mammal"
+    },
+    {
+      "id": 31,
+      "name": "living_thing"
+    },
+    {
+      "id": 32,
+      "name": "dog"
+    },
+    {
+      "id": 33,
+      "name": "organism"
+    }
+  ],
+  "links": [
+    {
+      "source": 32,
+      "target": 11,
+      "type": "synonym"
+    },
+    {
+      "source": 32,
+      "target": 29,
+      "type": "synonym"
+    },
+    {
+      "source": 32,
+      "target": 17,
+      "type": "hypernym"
+    },
+    {
+      "source": 17,
+      "target": 10,
+      "type": "synonym"
+    },
+    {
+      "source": 17,
+      "target": 22,
+      "type": "hypernym"
+    },
+    {
+      "source": 22,
+      "target": 25,
+      "type": "hypernym"
+    },
+    {
+      "source": 25,
+      "target": 8,
+      "type": "synonym"
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "type": "synonym"
+    },
+    {
+      "source": 25,
+      "target": 2,
+      "type": "synonym"
+    },
+    {
+      "source": 25,
+      "target": 30,
+      "type": "hypernym"
+    },
+    {
+      "source": 30,
+      "target": 28,
+      "type": "synonym"
+    },
+    {
+      "source": 30,
+      "target": 6,
+      "type": "hypernym"
+    },
+    {
+      "source": 6,
+      "target": 19,
+      "type": "synonym"
+    },
+    {
+      "source": 6,
+      "target": 14,
+      "type": "hypernym"
+    },
+    {
+      "source": 14,
+      "target": 1,
+      "type": "hypernym"
+    },
+    {
+      "source": 1,
+      "target": 27,
+      "type": "synonym"
+    },
+    {
+      "source": 1,
+      "target": 20,
+      "type": "synonym"
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "type": "synonym"
+    },
+    {
+      "source": 1,
+      "target": 24,
+      "type": "synonym"
+    },
+    {
+      "source": 1,
+      "target": 12,
+      "type": "synonym"
+    },
+    {
+      "source": 1,
+      "target": 33,
+      "type": "hypernym"
+    },
+    {
+      "source": 33,
+      "target": 18,
+      "type": "synonym"
+    },
+    {
+      "source": 33,
+      "target": 31,
+      "type": "hypernym"
+    },
+    {
+      "source": 31,
+      "target": 7,
+      "type": "synonym"
+    },
+    {
+      "source": 31,
+      "target": 4,
+      "type": "hypernym"
+    },
+    {
+      "source": 4,
+      "target": 16,
+      "type": "synonym"
+    },
+    {
+      "source": 4,
+      "target": 13,
+      "type": "hypernym"
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "type": "synonym"
+    },
+    {
+      "source": 13,
+      "target": 23,
+      "type": "hypernym"
+    },
+    {
+      "source": 23,
+      "target": 3,
+      "type": "hypernym"
+    },
+    {
+      "source": 32,
+      "target": 21,
+      "type": "hypernym"
+    },
+    {
+      "source": 21,
+      "target": 9,
+      "type": "synonym"
+    },
+    {
+      "source": 21,
+      "target": 1,
+      "type": "hypernym"
+    }
+  ]
+}
