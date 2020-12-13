@@ -1,0 +1,1 @@
+Develop a bar chart and plot line inside the jupyter notebook with random data.
