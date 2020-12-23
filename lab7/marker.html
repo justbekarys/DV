@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Marker Arrow</title>
+  <script src="d3.min.js" defer></script>
+  <script src="app.js" defer></script>
+  <meta charset="utf-8">
+</head>
+<body>
+<svg>
+  <defs>
+      <marker id="markerCircle" markerWidth="8" markerHeight="8" refX="5" refY="5">
+          <circle cx="5" cy="5" r="3" style="stroke: none; fill:#000000;"/>
+      </marker>
+
+      <marker id="markerArrow" markerWidth="13" markerHeight="13" refX="2" refY="6"
+             orient="auto">
+          <path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
+      </marker>
+  </defs>
+
+  <path d="M100,10 L150,10 L150,60"
+        style="stroke: #6666ff; stroke-width: 1px; fill: none;
+                     marker-start: url(#markerCircle);
+                     marker-end: url(#markerArrow);
+                   "/>
+</svg>
+
+<!-- SVG defines 6 types of path commands, for a total of 20 commands:
+
+MoveTo: M, m
+LineTo: L, l, H, h, V, v
+Cubic Bézier Curve: C, c, S, s
+Quadratic Bézier Curve: Q, q, T, t
+Elliptical Arc Curve: A, a
+ClosePath: Z, z -->
+</body>
+</html>
